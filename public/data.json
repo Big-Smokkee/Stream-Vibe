@@ -1,0 +1,165 @@
+[
+  {
+    "id": 1,
+    "title": "Stranger Things",
+    "type": "show",
+    "genre": ["Sci-Fi", "Horror", "Teen TV"],
+    "rating": 4.8,
+    "releaseYear": 2022,
+    "seasons": 4,
+    "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+    "poster": "https://i.ibb.co.com/1G6nqg24/glowing-red-stranger-things-d4t3tj2dx8st833s.jpg",
+    "isTrending": true,
+    "episodes": [
+      { "no": "01", "title": "Chapter One: The Vanishing of Will Byers", "duration": "49 min" },
+      { "no": "02", "title": "Chapter Two: The Weirdo on Maple Street", "duration": "56 min" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Avengers: Endgame",
+    "type": "movie",
+    "genre": ["Action", "Sci-Fi"],
+    "rating": 4.9,
+    "releaseYear": 2019,
+    "duration": "3h 02min",
+    "description": "After the devastating events of Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more.",
+    "poster": "https://i.ibb.co.com/Rkd33X6p/avengers-endgame-2019-official-poster-th.jpg",
+    "isTrending": false
+  },
+  {
+    "id": 3,
+    "title": "Inception",
+    "type": "movie",
+    "genre": ["Sci-Fi", "Action", "Thriller"],
+    "rating": 4.8,
+    "releaseYear": 2010,
+    "duration": "2h 28min",
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    "poster": "https://i.ibb.co.com/qFXL0Hrx/OIP-11.webp",
+    "isTrending": true,
+    "cast": [
+      { "name": "Leonardo DiCaprio", "role": "Cobb", "img": "url_here" },
+      { "name": "Cillian Murphy", "role": "Fischer", "img": "url_here" }
+    ],
+    "languages": ["English", "Spanish", "French"]
+  },
+  {
+    "id": 4,
+    "title": "The Last of Us",
+    "type": "show",
+    "genre": ["Adventure", "Drama", "Horror"],
+    "rating": 4.7,
+    "releaseYear": 2023,
+    "seasons": 1,
+    "description": "After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.",
+    "poster": "https://i.ibb.co.com/tpgPJykn/the-last-of-us-poster-1.avif",
+    "isTrending": true,
+    "episodes": [
+      { "no": "01", "title": "When You're Lost in the Darkness", "duration": "81 min" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "The Dark Knight",
+    "type": "movie",
+    "genre": ["Action", "Crime", "Drama"],
+    "rating": 4.9,
+    "releaseYear": 2008,
+    "duration": "2h 32min",
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests.",
+    "poster": "https://i.ibb.co.com/dwk5YBJk/OIP-10.webp",
+    "isTrending": false,
+    "cast": [
+      { "name": "Christian Bale", "role": "Batman", "img": "url_here" },
+      { "name": "Heath Ledger", "role": "Joker", "img": "url_here" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Interstellar",
+    "type": "movie",
+    "genre": ["Sci-Fi", "Drama", "Adventure"],
+    "rating": 4.8,
+    "releaseYear": 2014,
+    "duration": "2h 49min",
+    "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "poster": "https://i.ibb.co.com/rGvwMJdp/OIP-9.webp",
+    "isTrending": false
+  },
+  {
+    "id": 7,
+    "title": "The Boys",
+    "type": "show",
+    "genre": ["Action", "Comedy", "Crime"],
+    "rating": 4.7,
+    "releaseYear": 2019,
+    "seasons": 4,
+    "description": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+    "poster": "https://i.ibb.co.com/dwcHj4ty/the-boys-season-4-spin-off.jpg",
+    "isTrending": true
+  },
+  {
+    "id": 8,
+    "title": "Breaking Bad",
+    "type": "show",
+    "genre": ["Crime", "Drama", "Thriller"],
+    "rating": 4.9,
+    "releaseYear": 2008,
+    "seasons": 5,
+    "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+    "poster": "https://i.ibb.co.com/4wkNN7Gq/OIP-14.webp",
+    "isTrending": true,
+    "episodes": [
+      { "no": "01", "title": "Pilot", "duration": "58 min" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Spider-Man: Across the Spider-Verse",
+    "type": "movie",
+    "genre": ["Animation", "Action", "Adventure"],
+    "rating": 4.9,
+    "releaseYear": 2023,
+    "duration": "2h 20min",
+    "description": "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
+    "poster": "https://i.ibb.co.com/RZ5Yybr/spiderman-across-the-spiderverse-2023-5k-yc-2560x1440.jpg",
+    "isTrending": true
+  },
+  {
+    "id": 10,
+    "title": "The Witcher",
+    "type": "show",
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "rating": 4.1,
+    "releaseYear": 2019,
+    "seasons": 3,
+    "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+    "poster": "https://i.ibb.co.com/whJR8T5Q/OIP-13.webp",
+    "isTrending": false
+  },
+  {
+    "id": 11,
+    "title": "Gladiator",
+    "type": "movie",
+    "genre": ["Action", "Adventure", "Drama"],
+    "rating": 4.8,
+    "releaseYear": 2000,
+    "duration": "2h 35min",
+    "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "poster": "https://i.ibb.co.com/XZjWbc6T/OIP-12.webp",
+    "isTrending": false
+  },
+  {
+    "id": 12,
+    "title": "Money Heist",
+    "type": "show",
+    "genre": ["Crime", "Drama", "Thriller"],
+    "rating": 4.7,
+    "releaseYear": 2017,
+    "seasons": 5,
+    "description": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+    "poster": "https://i.ibb.co.com/LdbZHgZh/download-2.webp",
+    "isTrending": true
+  }
+]
