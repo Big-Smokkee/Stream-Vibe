@@ -1,53 +1,45 @@
 import React, { use } from 'react';
-import playIcon from '../assets/hero-section-logo.png'; // Tumi jeita export korso
+import playIcon from '../assets/hero-section-logo.png';
 
 const Hero = ({ movieDataPromise }) => {
     const movieData = use(movieDataPromise);
+
     return (
-        <section className="relative w-full h-[80vh] flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
 
-            {/* --- Background Grid (The Magic Part) --- */}
-            <div className="absolute inset-0 -z-10 grid grid-cols-4 md:grid-cols-8 gap-2 opacity-30">
-                {/* Ekhane tumi 20-30 ta poster image map korte paro. 
-                   Apadoto dummy images diye dekho grid-ta kemon lage.
-                */}
-
-                {movieData.map((movie, i) => (
-                    <div key={i} className="aspect-2/3 bg-gray-900 rounded-lg overflow-hidden">
+            {/* 1. Poster Grid: Eita sobar niche thakbe (-z-20) */}
+            <div className="absolute inset-0 -z-20 grid grid-cols-4 md:grid-cols-8 gap-2 opacity-40">
+                {movieData.slice(0, 24).map((movie) => (
+                    <div key={movie.id} className="h-40 md:h-60">
                         <img
-                            src={movie.poster} // Ekta common poster
-                            className="w-full h-full object-cover opacity-50"
-                            alt="bg-movie"
+                            src={movie.poster}
+                            alt="poster"
+                            className="w-full h-full object-cover rounded-md"
                         />
                     </div>
                 ))}
-
-                {/* Gradient Overlay for the dark fade effect */}
-                <div className="absolute inset-0 bg-linear-to-t from-[#0f0f0f00] via-transparent to-[#0f0f0f00]"></div>
-                <div className="absolute inset-0 bg-black/40"></div>
             </div>
 
-            {/* --- Hero Content --- */}
-            <div className="text-center flex flex-col items-center gap-6 px-4">
-                {/* Play Button Icon */}
-                <div className="w-20 h-20 md:w-32 md:h-32 mb-4 animate-pulse">
-                    <img src={playIcon} alt="Play" className="w-full h-full object-contain" />
+            {/* 2. Dark Overlay & Gradient: Eta grid er upore kintu content er niche thakbe (-z-10) */}
+            {/* bg-black/60 mane 60% kalo porda, jate chhobi gula halka dekha jay */}
+            <div className="absolute inset-0 -z-10 bg-black/40 bg-linear-to-t from-black via-transparent to-black"></div>
+
+            {/* 3. Main Content: Ekhane kono -z-index hobe na, tahole content dekha jabe */}
+            <div className="text-center flex flex-col items-center px-6 max-w-5xl">
+                <div className="mb-10">
+                    <img src={playIcon} alt="Play" className="w-24 md:w-44" />
                 </div>
 
-                <h1 className="text-4xl md:text-6xl font-bold max-w-4xl leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     The Best Streaming Experience
                 </h1>
 
-                <p className="text-gray-400 max-w-2xl text-sm md:text-base">
-                    StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
-                    anytime, anywhere.
+                <p className="text-gray-400 text-sm md:text-base mb-10 max-w-3xl leading-relaxed">
+                    StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.
                 </p>
 
-                <button className="btn bg-red-600 hover:bg-red-700 text-white border-none px-8">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 mr-2">
-                        <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
-                    </svg>
-                    Start Watching Now
+                <button className="flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105">
+                    <span className='text-lg'>▶</span> Start Watching Now
                 </button>
             </div>
         </section>
