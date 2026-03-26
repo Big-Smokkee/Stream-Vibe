@@ -2,14 +2,14 @@ import React from 'react';
 import navLogo from '../assets/Logo.png'
 const Navbar = () => {
     return (
-        <nav className='px-20'>
-            <div className="navbar  shadow-sm bg-base-100  text-white">
+        <nav className='px-20 bg-black'>
+            <div className="navbar  shadow-sm   text-white">
                 <div className="navbar-start">
                     <a className="btn btn-ghost text-xl">
                         <img src={navLogo} alt="navbar logo" />
                     </a>
                 </div>
-                <div className="navbar-center gap-6 bg-gray-800 p-4 rounded-2xl">
+                <div className="navbar-center gap-6 bg-gray-900 p-4 rounded-2xl border-2 border-gray-500">
                     <a href="http://" target="_blank" rel="noopener noreferrer" className='hover:bg-gray-600 p-2 text-sm rounded-xl'>Home</a>
                     <a href="http://" target="_blank" rel="noopener noreferrer" className='hover:bg-gray-600 p-2 text-sm rounded-xl'>Movies & Shows</a>
                     <a href="http://" target="_blank" rel="noopener noreferrer" className='hover:bg-gray-600 p-2 text-sm rounded-xl'>Support</a>
